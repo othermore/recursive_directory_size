@@ -31,7 +31,7 @@ No external dependencies required! This script uses only Python standard librari
 2. Download the script:
 
 ```bash
-curl -O https://raw.githubusercontent.com/your-username/repo-name/main/gdrive_analyzer.py
+curl -O https://raw.githubusercontent.com/othermore/recursive_directory_size/main/recursive_directory_size.py
 
 ```
 
