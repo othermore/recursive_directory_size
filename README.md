@@ -72,17 +72,17 @@ After the script finishes, it will print the location of the output file (e.g., 
 **Sort from Largest to Smallest:**
 
 ```bash
-# Skip the header lines (+3) and sort by the first column (-k1,2)
-tail -n +3 /tmp/drive_scan_12345.txt | sort -hr -k1,2
+# Skip the header lines (+3)
+tail -n +3 /tmp/drive_scan_xxxx.txt | sort -hr
 
 ```
 
 ### Understanding the Output
 
 ```text
-    15.40 GB | /My Drive/Projects
-    10.20 GB | /My Drive/Backups (*)
-     5.10 GB | /My Drive/Photos
+    15.40GB | /My Drive/Projects
+    10.20GB | /My Drive/Backups (*)
+     5.10GB | /My Drive/Photos
 
 ```
 
@@ -93,18 +93,3 @@ tail -n +3 /tmp/drive_scan_12345.txt | sort -hr -k1,2
 
 * **Initial Cache:** The first time you run this on a massive drive, it might take a while as Google Drive needs to fetch metadata. Subsequent runs will be much faster due to OS caching.
 * **Memory Usage:** The script builds the directory tree in memory. For drives with millions of files, Python may use a few hundred MB of RAM.
-
-## 📄 License
-
-MIT License. Feel free to modify and use it!
-
----
-
-### Pasos siguientes para ti:
-
-1. Crea un archivo llamado `README.md` en tu carpeta.
-2. Copia el texto de arriba.
-3. Donde pone `curl -O https://raw.githubusercontent...`, asegúrate de cambiar "your-username" y "repo-name" por tu usuario y nombre del repositorio real cuando lo crees.
-4. Sube el script (`gdrive_analyzer.py`) y el `README.md` a GitHub.
-
-¡Listo! Tienes una herramienta súper útil documentada como un profesional.
